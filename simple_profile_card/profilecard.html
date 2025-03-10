@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        padding: 20px;
+        width: 280px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .profile-pic {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #007bff;
+      }
+      .name {
+        font-size: 1.4em;
+        margin: 10px 0;
+        color: #333;
+      }
+      .designation {
+        color: gray;
+        font-size: 1em;
+      }
+      .bio {
+        margin: 10px 0;
+        font-size: 0.9em;
+        color: #555;
+      }
+      .social-icons {
+        margin-top: 10px;
+      }
+      .social-icons a {
+        margin: 0 8px;
+        color: #007bff;
+        font-size: 1.2em;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+      .social-icons a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="Screenshot 2024-05-06 143505.png"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+      <h2 class="name">Shivam Uttarwar</h2>
+      <p class="designation"><h3>Project Associate</h3></p>
+      <p class="bio">  Shivam Uttarwar with a strong background in Java Spring Boot for backend development and ReactJS for frontend design. 
+         developing robust APIs and dynamic user interfaces.  Skilled in optimizing performance 
+        and enhancing user experiences. Excellent communicator with a proven ability to manage client interactions effectively.   </p>
+      <div class="social-icons">
+        <a href="#">🐦</a>
+        <a href="#">📱</a>
+        <a href="#">💻</a>
+      </div>
+    </div>
+  </body>
+</html>
